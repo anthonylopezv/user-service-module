@@ -2,7 +2,7 @@
   "name": "user-service-mdl",
   "version": "1.0.9",
   "description": "Library user service with nestjs",
-  "main": "./lib/user/index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "clean": "rimraf lib",
     "build": "tsc",
