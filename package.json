@@ -2,10 +2,10 @@
   "name": "user-service-mdl",
   "version": "1.0.7",
   "description": "Library user service with nestjs",
-  "main": "./lib/index.js",
+  "main": "./lib/user/user.module.js",
   "scripts": {
     "clean": "rimraf lib",
-    "build": "tsc -p tsconfig.build.json",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",

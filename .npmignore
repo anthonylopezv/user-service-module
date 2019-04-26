@@ -1,14 +1,5 @@
-# source
-**/*.ts
-*.ts
-
-# definitions
-!**/*.d.ts
-!*.d.ts
-
-# configuration
-package-lock.json
-tslint.json
+src
 tsconfig.json
 tsconfig.build.json
+tslint.json
 .prettierrc
