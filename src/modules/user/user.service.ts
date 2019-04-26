@@ -30,7 +30,9 @@ export class UserService {
 
   async createdUser(createUserDto: CreateUserDto) {
     const pattern = { cmd: 'CREATED_USER' };
-    const newUser = await this.client.send<User[]>(pattern, createUserDto).toPromise();
+    const newUser = await this.client
+      .send<User[]>(pattern, createUserDto)
+      .toPromise();
     return newUser;
   }
 }
