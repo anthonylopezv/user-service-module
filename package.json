@@ -1,6 +1,6 @@
 {
   "name": "user-service-mdl",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Library user service with nestjs",
   "main": "./lib/user/user.module.js",
   "scripts": {
