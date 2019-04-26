@@ -1,0 +1,43 @@
+{
+  "name": "user-service-mdl",
+  "version": "1.0.0",
+  "description": "Library user service with nestjs",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "tsc -p tsconfig.build.json",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepublish": "npm run clean && npm run lint && npm run format && npm run build "
+  },
+  "keywords": [
+    "npm",
+    "node",
+    "nestjs",
+    "typescript"
+  ],
+  "author": "Anthony Lopez <anthodev1195@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^1.17.0",
+    "rimraf": "^2.6.3",
+    "tslint": "^5.16.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.4.5"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "dependencies": {
+    "@nestjs/common": "^6.1.1",
+    "@nestjs/core": "^6.1.1",
+    "@nestjs/microservices": "^6.1.1",
+    "@types/node": "^11.13.7",
+    "class-validator": "^0.9.1",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.5.1",
+    "ts-node": "^8.1.0",
+    "tsconfig-paths": "^3.8.0"
+  }
+}
