@@ -10,6 +10,7 @@ import { ClientsModule, Transport } from '@nestjs/microservices';
 })
 export class UserModule {
   static forRoot(options?): DynamicModule {
+    const { host, port } = options;
     return {
       module: UserModule,
       imports: [
@@ -17,7 +18,10 @@ export class UserModule {
           {
             name: 'USER_SERVICE',
             transport: Transport.TCP,
-            options: { ...options },
+            options: {
+              host,
+              port
+            },
           },
         ]),
       ],
