@@ -19,7 +19,7 @@ export class UserModule {
             options: { ...options },
           },
         ]),
-      ]
+      ],
     }
   }
 }
