@@ -10,7 +10,6 @@ import { ClientsModule, Transport } from '@nestjs/microservices';
 })
 export class UserModule {
   static forRoot(options?): DynamicModule {
-    console.log('Viendo las opciones', options);
     return {
       module: UserModule,
       imports: [
