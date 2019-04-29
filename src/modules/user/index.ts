@@ -9,7 +9,7 @@ import { ClientsModule, Transport } from '@nestjs/microservices';
   exports: [UserService],
 })
 export class UserModule {
-  static forRoot(options: { host: string; port: number; } ): DynamicModule {
+  static forRoot(options: { host: string; port: number }): DynamicModule {
     const { host, port } = options;
     return {
       module: UserModule,
